@@ -22,6 +22,10 @@ public class User {
      
     @Column(name = "last_name", nullable = false, length = 20)
     private String lastName;
+    
+    @Column(name = "type", nullable = true, length = 20)
+    private String type;
+    
 
 	public Long getId() {
 		return id;
@@ -62,6 +66,18 @@ public class User {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+
+	
+	
      
     
 }
